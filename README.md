@@ -11,7 +11,7 @@
   * Hopefully so. If not, something is strange.
  * Was codebook submitted that modifies and updates the codebooks available to you with the data to indicate all the variables and summaries you calculated along with units and any other relevant information?
   * I hope so.  If this were something I were doing for real, I would presumably be able to know exactly what to say here.  As it is it is kind of an afterthought because I didn't realize this was expected until I went to add this section to this file.
-  * For ease, you can go directly to the section _V_ of this file to see the table, or you can look at it online [https://github.com/crhume/CourseraTidyDataProject/blob/master/codebook.txt](here)
+  * For ease, you can go directly to the section _V_ of this file to see the table, or you can look at it online [here](https://github.com/crhume/CourseraTidyDataProject/blob/master/codebook.txt)
  * Were you able to follow the README in the directory that explained what the analysis files do?
   * (see _IV_ below you can also read the comments in the script itself)  
 
