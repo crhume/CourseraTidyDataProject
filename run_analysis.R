@@ -57,7 +57,7 @@
 ##  The output file will still appear in your working directory
 ##  You should probably not use both of these, but I supposed you could.
 
-# Initialize the directory to read the data from, default is here
+# Initialize the directory to read the data from, default is existing wd
 dir <- "."
 
 if (exists("topdir")) {
@@ -74,6 +74,8 @@ require("reshape2")
 
 ## Next we load the requisite tables into memory along with any preliminary
 ##  adjustments
+##  -- added column labels to activity_labels which are used later in merge
+##  created logical vector to match the 86 variables which indicate means or std
 
 activity_labels <- read.table(paste(dir,"/activity_labels.txt",sep=""))
 colnames(activity_labels) <- c("activity","activityName")
@@ -84,37 +86,60 @@ f_lbls <- as.vector(features[,2]) # extracts just the feature names
 mstd_cols <- as.logical(grepl("(mean)|(std)",f_lbls,ignore.case=TRUE))
 # features_info.txt is basically a readme file with explanations
 
+
+## Load in test data and use cbind() to form a single table of test data
 test_subject <- read.table(paste(dir,"/test/subject_test.txt",sep=""))
+## rename column header 
 colnames(test_subject) <- "subject"
 test_X <- read.table(paste(dir,"/test/X_test.txt",sep=""))
+## rename column headers using the labels from earlier
 colnames(test_X) <- f_lbls
 # select only those with means or standard deviations
 test_X <- test_X[,mstd_cols]
 test_Y <- read.table(paste(dir,"/test/y_test.txt",sep=""))
+## rename column header 
 colnames(test_Y) <- "activity"
 
+## combine into single "test" dataset
 test <- cbind(test_subject,test_Y,test_X)
 
+
+## Load in training data and use cbind() to form a single table of training data
 train_subject <- read.table(paste(dir,"/train/subject_train.txt",sep=""))
+## rename column header 
 colnames(train_subject) <- "subject"
 train_X <- read.table(paste(dir,"/train/X_train.txt",sep=""))
+## rename column headers using the same labels from earlier 
 colnames(train_X) <- f_lbls
 # select only those with means or standard deviations
 train_X <- train_X[,mstd_cols]
 train_Y <- read.table(paste(dir,"/train/Y_train.txt",sep=""))
+## rename column header 
 colnames(train_Y) <- "activity"
 
+## combine into single "training" dataset
 train <- cbind(train_subject,train_Y,train_X)
 
+## 1. rbind the test and train dfs together, 
+## 2. merge this with the activity labels to create new column with appropriate 
+##   activity labels
+
 rdf <- merge(activity_labels,rbind(test,train))
+## remove extra column with activity ids instead of labels
 rdf <- rdf[,!(colnames(rdf)=="activity")]
 
 #  pull all unneeded objects from memory to save room for processing
 rm(list = c("activity_labels","a_lbls","features","f_lbls","mstd_cols","test_subject","test_X","test_Y","train_subject","train_X","train_Y","test","train"))
 
+## Using reshape2
+## melt dataset for recasting
 rdf_melted <- melt(rdf,id=c("subject","activityName"))
+## recast dataset 
 tidy_rdf_mean <- dcast(rdf_melted, subject + activityName ~ variable, mean)
 
+## remove melted dataframe since it is an intermediate step
 rm(rdf_melted,dir)
 
+## write output file as directed by the instructions
+## note that this output file will exactly duplicate the tidy_rdf_mean df
 write.table(tidy_rdf_mean,file="Project_tidy_data_output.txt",row.name=FALSE)
