@@ -1,11 +1,18 @@
 # Coursera Getting and Cleaning Data Project results
 ------------------
 #### Very Short Synopsis:
-* _The only thing complicated about this is making sure that the data is where the code expects it to be.  I have tried to make this as painless as possible, but if it doesn't work, you can hopefully figure out what you're missing by looking at the relevant sections below this._
-* Code will output a file (`Project_tidy_data_output.txt`) in the _working directory_ and will also store the data frames from both step 1 and 2 of the project in memory (called `rdf` and `tidy_rdf_mean`).  
+
+ * _The only thing complicated about this is making sure that the data is where the code expects it to be.  I have tried to make this as painless as possible, but if it doesn't work, you can hopefully figure out what you're missing by looking at the relevant sections below this._
+ * Code will output a file (`Project_tidy_data_output.txt`) in the _working directory_ and will also store the data frames from both step 1 and 2 of the project in memory (called `rdf` and `tidy_rdf_mean`).  
+
 -------------------
 #### Quick Checklist Help
-
+ * Did I submit a Github repo?
+  * Hopefully so. 
+ * Was code book submitted that modifies and updates the codebooks available to you with the data to indicate all the variables and summaries you calculated along with units and any other relevant information?
+  * 
+ * Were you able to follow the README in the directory that explained what the analysis files do?
+  * (see _IV_ below you can also read the comments in the script itself)  
 
 
 =======================
