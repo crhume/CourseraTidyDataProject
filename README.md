@@ -198,92 +198,92 @@ The following outline shows some pseudo-logic that was filled in to arrange the 
 |:--:|:--------- | ---------:|:----------------- |
 | 1 | subject | integer	| numbers 1-30 |
 | 2 | activityName | string | LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS |
-| 3 |tBodyAcc-mean()-X | std gravity units 'g' | measured acceleration in X direction |
-| 4 |tBodyAcc-mean()-Y | std gravity units 'g' | measured acceleration in Y direction |
-| 5 |tBodyAcc-mean()-Z | std gravity units 'g' | measured acceleration in Z direction |
-| 6 |tBodyAcc-std()-X  | std gravity units 'g' | measured acceleration in X direction |                  
-| 7 |tBodyAcc-std()-Y  | std gravity units 'g' | measured acceleration in Y direction |
-| 8 |tBodyAcc-std()-Z  | std gravity units 'g' | measured acceleration in Z direction |
-| 9 |tGravityAcc-mean()-X | std gravity units 'g' | measured acceleration in X direction |
-| 10 |tGravityAcc-mean()-Y | std gravity units 'g' | measured acceleration in Y direction |
-| 11 |tGravityAcc-mean()-Z | std gravity units 'g' | measured acceleration in Z direction |
-| 12 |tGravityAcc-std()-X | std gravity units 'g' | measured acceleration in X direction |
-| 13 |tGravityAcc-std()-Y | std gravity units 'g' | measured acceleration in Y direction |
-| 14 |tGravityAcc-std()-Z | std gravity units 'g' | measured acceleration in Z direction |
-| 15 |tBodyAccJerk-mean()-X | std gravity jerk units 'g/s' | measured jerk in X direction |              
-| 16 |tBodyAccJerk-mean()-Y | std gravity jerk units 'g/s' | measured jerk in Y direction |
-| 17 |tBodyAccJerk-mean()-Z | std gravity jerk units 'g/s' | measured jerk in Z direction |
-| 18 |tBodyAccJerk-std()-X  | std gravity jerk units 'g/s' | measured jerk in X direction |              
-| 19 |tBodyAccJerk-std()-Y | std gravity jerk units 'g/s' | measured jerk in Y direction |
-| 20 |tBodyAccJerk-std()-Z | std gravity jerk units 'g/s' | measured jerk in Z direction |
-| 21 |tBodyGyro-mean()-X     | radians/second | measured angular velocity in X direction |             
-| 22 |tBodyGyro-mean()-Y | radians/second | measured angular velocity in Y direction |
-| 23 |tBodyGyro-mean()-Z | radians/second | measured angular velocity in Z direction |
-| 24 |tBodyGyro-std()-X  | radians/second | measured angular velocity in X direction |
-| 25 |tBodyGyro-std()-Y | radians/second | measured angular velocity in Y direction |
-| 26 |tBodyGyro-std()-Z | radians/second | measured angular velocity in Z direction |
-| 27 |tBodyGyroJerk-mean()-X | radians/second^2 | measured angular jerk in X direction |
-| 28 |tBodyGyroJerk-mean()-Y | radians/second^2 | measured angular jerk in Y direction |
-| 29 |tBodyGyroJerk-mean()-Z | radians/second^2 | measured angular jerk in Z direction |
-| 30 |tBodyGyroJerk-std()-X  | radians/second^2 | measured angular jerk in X direction |             
-| 31 |tBodyGyroJerk-std()-Y | radians/second^2 | measured angular jerk in Y direction |
-| 32 |tBodyGyroJerk-std()-Z | radians/second^2 | measured angular jerk in Z direction |
-| 33 |tBodyAccMag-mean() | std gravity units 'g' | measured acceleration |                 
-| 34 |tBodyAccMag-std() | std gravity units 'g' | measured acceleration |
-| 35 |tGravityAccMag-mean() | std gravity units 'g' | measured acceleration |
-| 36 |tGravityAccMag-std() | std gravity units 'g' | measured acceleration |               
-| 37 |tBodyAccJerkMag-mean() | std gravity jerk units 'g/s' | measured jerk |
-| 38 |tBodyAccJerkMag-std() | std gravity jerk units 'g/s' | measured jerk |
-| 39 |tBodyGyroMag-mean() | radians/second | measured angular velocity |
-| 40 |tBodyGyroMag-std() | radians/second | measured angular velocity |
-| 41 |tBodyGyroJerkMag-mean() | radians/second^2 | measured angular jerk |
-| 42 |tBodyGyroJerkMag-std() | radians/second^2 | measured angular jerk |
-| 43 |fBodyAcc-mean()-X | std gravity units 'g' | measured acceleration in X direction |
-| 44 |fBodyAcc-mean()-Y | std gravity units 'g' | measured acceleration in Y direction |
-| 45 |fBodyAcc-mean()-Z | std gravity units 'g' | measured acceleration in Z direction |          
-| 46 |fBodyAcc-std()-X | std gravity units 'g' | measured acceleration in X direction |
-| 47 |fBodyAcc-std()-Y | std gravity units 'g' | measured acceleration in Y direction |
-| 48 |fBodyAcc-std()-Z | std gravity units 'g' | measured acceleration in Z direction | 
-| 49 |fBodyAcc-meanFreq()-X | Hz | measured avg of frequency components |
-| 50 |fBodyAcc-meanFreq()-Y | Hz | measured avg of frequency components |
-| 51 |fBodyAcc-meanFreq()-Z               | Hz | measured avg of frequency components |
-| 52 |fBodyAccJerk-mean()-X | std gravity jerk units 'g/s' | measured jerk in X direction |
-| 53 |fBodyAccJerk-mean()-Y | std gravity jerk units 'g/s' | measured jerk in Y direction |
-| 54 |fBodyAccJerk-mean()-Z         | std gravity jerk units 'g/s' | measured jerk in Z direction |      
-| 55 |fBodyAccJerk-std()-X | std gravity jerk units 'g/s' | measured jerk in X direction |
-| 56 |fBodyAccJerk-std()-Y | std gravity jerk units 'g/s' | measured jerk in Y direction |
-| 57 |fBodyAccJerk-std()-Z  | std gravity jerk units 'g/s' | measured jerk in Z direction |              
-| 58 |fBodyAccJerk-meanFreq()-X | Hz | measured avg of frequency components |
-| 59 |fBodyAccJerk-meanFreq()-Y | Hz | measured avg of frequency components |
-| 60 |fBodyAccJerk-meanFreq()-Z | Hz | measured avg of frequency components |
-| 61 |fBodyGyro-mean()-X | radians/second | measured angular velocity in X direction |
-| 62 |fBodyGyro-mean()-Y | radians/second | measured angular velocity in Y direction |
-| 63 |fBodyGyro-mean()-Z  | radians/second | measured angular velocity in Z direction |
-| 64 |fBodyGyro-std()-X | radians/second | measured angular velocity in X direction |
-| 65 |fBodyGyro-std()-Y | radians/second | measured angular velocity in Y direction |
-| 66 |fBodyGyro-std()-Z | radians/second | measured angular velocity in Z direction |
-| 67 |fBodyGyro-meanFreq()-X | Hz | measured avg of frequency components |
-| 68 |fBodyGyro-meanFreq()-Y | Hz | measured avg of frequency components |
-| 69 |fBodyGyro-meanFreq()-Z | Hz | measured avg of frequency components |
-| 70 |fBodyAccMag-mean() | std gravity units 'g' | measured acceleration |
-| 71 |fBodyAccMag-std() | std gravity units 'g' | measured acceleration |
-| 72 |fBodyAccMag-meanFreq() | Hz | measured avg of frequency components |
-| 73 |fBodyBodyAccJerkMag-mean() | std gravity jerk units 'g/s' | measured jerk |
-| 74 |fBodyBodyAccJerkMag-std() | std gravity jerk units 'g/s' | measured jerk |
-| 75 |fBodyBodyAccJerkMag-meanFreq()      | Hz | measured avg of frequency components |
-| 76 |fBodyBodyGyroMag-mean()  | radians/second | measured angular velocity |
-| 77 |fBodyBodyGyroMag-std() | radians/second | measured angular velocity |
-| 78 |fBodyBodyGyroMag-meanFreq() | Hz | measured avg of frequency components |
-| 79 |fBodyBodyGyroJerkMag-mean() | radians/second^2 | measured angular jerk |
-| 80 |fBodyBodyGyroJerkMag-std() | radians/second^2 | measured angular jerk |
-| 81 |fBodyBodyGyroJerkMag-meanFreq() | Hz | measured avg of frequency components |
-| 82 |angle(tBodyAccMean,gravity) | radians | angular component of vector for gravity |
-| 83 |angle(tBodyAccJerkMean),gravityMean) | radians | angular component of vector for gravity |
-| 84 |angle(tBodyGyroMean,gravityMean) | radians | angular component of vector for gravity |
-| 85 |angle(tBodyGyroJerkMean,gravityMean) | radians | angular component of vector for gravity |
-| 86 |angle(X,gravityMean) | radians | angular component of vector for gravity |
-| 87 |angle(Y,gravityMean) | radians | angular component of vector for gravity |
-| 88 |angle(Z,gravityMean)                | radians | angular component of vector for gravity |
+| 3 |tBodyAcc.mean.X | std gravity units 'g' | measured acceleration in X direction |
+| 4 |tBodyAcc.mean.Y | std gravity units 'g' | measured acceleration in Y direction |
+| 5 |tBodyAcc.mean.Z | std gravity units 'g' | measured acceleration in Z direction |
+| 6 |tBodyAcc.std.X  | std gravity units 'g' | measured acceleration in X direction |                  
+| 7 |tBodyAcc.std.Y  | std gravity units 'g' | measured acceleration in Y direction |
+| 8 |tBodyAcc.std.Z  | std gravity units 'g' | measured acceleration in Z direction |
+| 9 |tGravityAcc.mean.X | std gravity units 'g' | measured acceleration in X direction |
+| 10 |tGravityAcc.mean.Y | std gravity units 'g' | measured acceleration in Y direction |
+| 11 |tGravityAcc.mean.Z | std gravity units 'g' | measured acceleration in Z direction |
+| 12 |tGravityAcc.std.X | std gravity units 'g' | measured acceleration in X direction |
+| 13 |tGravityAcc.std.Y | std gravity units 'g' | measured acceleration in Y direction |
+| 14 |tGravityAcc.std.Z | std gravity units 'g' | measured acceleration in Z direction |
+| 15 |tBodyAccJerk.mean.X | std gravity jerk units 'g/s' | measured jerk in X direction |              
+| 16 |tBodyAccJerk.mean.Y | std gravity jerk units 'g/s' | measured jerk in Y direction |
+| 17 |tBodyAccJerk.mean.Z | std gravity jerk units 'g/s' | measured jerk in Z direction |
+| 18 |tBodyAccJerk.std.X  | std gravity jerk units 'g/s' | measured jerk in X direction |              
+| 19 |tBodyAccJerk.std.Y | std gravity jerk units 'g/s' | measured jerk in Y direction |
+| 20 |tBodyAccJerk.std.Z | std gravity jerk units 'g/s' | measured jerk in Z direction |
+| 21 |tBodyGyro.mean.X     | radians/second | measured angular velocity in X direction |             
+| 22 |tBodyGyro.mean.Y | radians/second | measured angular velocity in Y direction |
+| 23 |tBodyGyro.mean.Z | radians/second | measured angular velocity in Z direction |
+| 24 |tBodyGyro.std.X  | radians/second | measured angular velocity in X direction |
+| 25 |tBodyGyro.std.Y | radians/second | measured angular velocity in Y direction |
+| 26 |tBodyGyro.std.Z | radians/second | measured angular velocity in Z direction |
+| 27 |tBodyGyroJerk.mean.X | radians/second^2 | measured angular jerk in X direction |
+| 28 |tBodyGyroJerk.mean.Y | radians/second^2 | measured angular jerk in Y direction |
+| 29 |tBodyGyroJerk.mean.Z | radians/second^2 | measured angular jerk in Z direction |
+| 30 |tBodyGyroJerk.std.X  | radians/second^2 | measured angular jerk in X direction |             
+| 31 |tBodyGyroJerk.std.Y | radians/second^2 | measured angular jerk in Y direction |
+| 32 |tBodyGyroJerk.std.Z | radians/second^2 | measured angular jerk in Z direction |
+| 33 |tBodyAccMag.mean | std gravity units 'g' | measured acceleration |                 
+| 34 |tBodyAccMag.std | std gravity units 'g' | measured acceleration |
+| 35 |tGravityAccMag.mean | std gravity units 'g' | measured acceleration |
+| 36 |tGravityAccMag.std | std gravity units 'g' | measured acceleration |               
+| 37 |tBodyAccJerkMag.mean | std gravity jerk units 'g/s' | measured jerk |
+| 38 |tBodyAccJerkMag.std | std gravity jerk units 'g/s' | measured jerk |
+| 39 |tBodyGyroMag.mean | radians/second | measured angular velocity |
+| 40 |tBodyGyroMag.std | radians/second | measured angular velocity |
+| 41 |tBodyGyroJerkMag.mean | radians/second^2 | measured angular jerk |
+| 42 |tBodyGyroJerkMag.std | radians/second^2 | measured angular jerk |
+| 43 |fBodyAcc.mean.X | std gravity units 'g' | measured acceleration in X direction |
+| 44 |fBodyAcc.mean.Y | std gravity units 'g' | measured acceleration in Y direction |
+| 45 |fBodyAcc.mean.Z | std gravity units 'g' | measured acceleration in Z direction |          
+| 46 |fBodyAcc.std.X | std gravity units 'g' | measured acceleration in X direction |
+| 47 |fBodyAcc.std.Y | std gravity units 'g' | measured acceleration in Y direction |
+| 48 |fBodyAcc.std.Z | std gravity units 'g' | measured acceleration in Z direction | 
+| 49 |fBodyAcc.meanFreq.X | Hz | measured avg of frequency components |
+| 50 |fBodyAcc.meanFreq.Y | Hz | measured avg of frequency components |
+| 51 |fBodyAcc.meanFreq.Z               | Hz | measured avg of frequency components |
+| 52 |fBodyAccJerk.mean.X | std gravity jerk units 'g/s' | measured jerk in X direction |
+| 53 |fBodyAccJerk.mean.Y | std gravity jerk units 'g/s' | measured jerk in Y direction |
+| 54 |fBodyAccJerk.mean.Z         | std gravity jerk units 'g/s' | measured jerk in Z direction |      
+| 55 |fBodyAccJerk.std.X | std gravity jerk units 'g/s' | measured jerk in X direction |
+| 56 |fBodyAccJerk.std.Y | std gravity jerk units 'g/s' | measured jerk in Y direction |
+| 57 |fBodyAccJerk.std.Z  | std gravity jerk units 'g/s' | measured jerk in Z direction |              
+| 58 |fBodyAccJerk.meanFreq.X | Hz | measured avg of frequency components |
+| 59 |fBodyAccJerk.meanFreq.Y | Hz | measured avg of frequency components |
+| 60 |fBodyAccJerk.meanFreq.Z | Hz | measured avg of frequency components |
+| 61 |fBodyGyro.mean.X | radians/second | measured angular velocity in X direction |
+| 62 |fBodyGyro.mean.Y | radians/second | measured angular velocity in Y direction |
+| 63 |fBodyGyro.mean.Z  | radians/second | measured angular velocity in Z direction |
+| 64 |fBodyGyro.std.X | radians/second | measured angular velocity in X direction |
+| 65 |fBodyGyro.std.Y | radians/second | measured angular velocity in Y direction |
+| 66 |fBodyGyro.std.Z | radians/second | measured angular velocity in Z direction |
+| 67 |fBodyGyro.meanFreq.X | Hz | measured avg of frequency components |
+| 68 |fBodyGyro.meanFreq.Y | Hz | measured avg of frequency components |
+| 69 |fBodyGyro.meanFreq.Z | Hz | measured avg of frequency components |
+| 70 |fBodyAccMag.mean | std gravity units 'g' | measured acceleration |
+| 71 |fBodyAccMag.std | std gravity units 'g' | measured acceleration |
+| 72 |fBodyAccMag.meanFreq | Hz | measured avg of frequency components |
+| 73 |fBodyBodyAccJerkMag.mean | std gravity jerk units 'g/s' | measured jerk |
+| 74 |fBodyBodyAccJerkMag.std | std gravity jerk units 'g/s' | measured jerk |
+| 75 |fBodyBodyAccJerkMag.meanFreq      | Hz | measured avg of frequency components |
+| 76 |fBodyBodyGyroMag.mean  | radians/second | measured angular velocity |
+| 77 |fBodyBodyGyroMag.std | radians/second | measured angular velocity |
+| 78 |fBodyBodyGyroMag.meanFreq | Hz | measured avg of frequency components |
+| 79 |fBodyBodyGyroJerkMag.mean | radians/second^2 | measured angular jerk |
+| 80 |fBodyBodyGyroJerkMag.std | radians/second^2 | measured angular jerk |
+| 81 |fBodyBodyGyroJerkMag.meanFreq | Hz | measured avg of frequency components |
+| 82 |angle.tBodyAccMean.gravity | radians | angular component of vector for gravity |
+| 83 |angle.tBodyAccJerkMean.gravityMean | radians | angular component of vector for gravity |
+| 84 |angle.tBodyGyroMean.gravityMean | radians | angular component of vector for gravity |
+| 85 |angle.tBodyGyroJerkMean.gravityMean | radians | angular component of vector for gravity |
+| 86 |angle.X.gravityMean | radians | angular component of vector for gravity |
+| 87 |angle.Y.gravityMean | radians | angular component of vector for gravity |
+| 88 |angle.Z.gravityMean | radians | angular component of vector for gravity |
 
 
 Thank you for reading, I hope that I have helped to make the grading process easier for you.
