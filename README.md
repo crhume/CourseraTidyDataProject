@@ -17,7 +17,7 @@
   * I hope so.  If this were something I were doing for real, I would presumably be able to know exactly what to say here.  As it is it is kind of an afterthought because I didn't realize this was expected until I went to add this section to this file.
   * For ease, you can go directly to the section _V_ of this file to see the table, or you can look at it online [here](https://github.com/crhume/CourseraTidyDataProject/blob/master/codebook.txt)
  * Were you able to follow the README in the directory that explained what the analysis files do?
-  * (see _IV_ below you can also read the comments in the script itself)  
+  * (see [_IV_](#codebook) below you can also read the comments in the script itself)  
 
 
 =======================
