@@ -23,14 +23,14 @@
 =======================
 ## Outline:
 
-- *I.* Contents of repository
+- *I.* <a name=contents>Contents of repository</a>
 - *II.* Installation and running code
 - *III.* Details of what to expect in output
 - *IV.* Explanations of methodology and output 
 - *V.* A markdown copy of the `codebook.txt` file
 
 ========================
-## I. Contents of repository
+## I. [Contents of repository](#contents)
 
 * Primary script named *run_analysis.R* as requested
 * This README file
