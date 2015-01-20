@@ -23,14 +23,14 @@
 =======================
 ## Outline:
 
-- *I.* <a name=contents>Contents of repository</a>
-- *II.* Installation and running code
-- *III.* Details of what to expect in output
-- *IV.* Explanations of methodology and output 
-- *V.* A markdown copy of the `codebook.txt` file
+- *I.* [Contents of repository](#contents)
+- *II.* [Installation and running code](#install)
+- *III.* [Details of what to expect in output](#output)
+- *IV.* [Explanations of methodology and output](#explain) 
+- *V.* [A markdown copy of the `codebook.txt` file](#codebook)
 
 ========================
-## I. [Contents of repository](#contents)
+## I. <a name=contents>Contents of repository</a>
 
 * Primary script named *run_analysis.R* as requested
 * This README file
@@ -61,7 +61,7 @@
 
 
 ========================
-## II. Installation and running code
+## II. <a name=install>Installation and running code</a>
 
 I assume that your RStudio is already set up appropriately and is pointing to whatever working directory you wish to use.  I will refer to this directory as the "_working directory_" for all instructions.
 
@@ -130,7 +130,7 @@ The script (if installed as described above, and if the data is present where ex
   - `source('run_analysis.R')`
   
 =====================
-## III. Details of what to expect in output
+## III. <a name=output>Details of what to expect in output</a>
   
 The output will consist of a single file named "Project\_tidy\_data\_output.txt" which will be placed in your working directory.
 
@@ -156,7 +156,7 @@ Subject numbers are as included in the files, activityName is as found in the `a
 The data frame is sorted by subject then activity, since I didn't see this specified.  Fortunately this is easy enough to change if needed.
 
 ===================
-## IV. Explanations of methodology and output
+## IV. <a name=explain>Explanations of methodology and output</a>
 
 Much of this information is also included in the script itself, but in case you're reading this first (good thinking!) I will include it here and then you can skip most of the comments in the script (if you're being that thorough).
 
@@ -192,7 +192,7 @@ The following outline shows some pseudo-logic that was filled in to arrange the 
   4. Before exiting I removed the intermediate "melted" dataset and output the final result to a file
 
 ======================
-## V. A markdown copy of the `codebook.txt` file
+## V. <a name=codebook>A markdown copy of the `codebook.txt` file</a>
 
 |VarNo|Variables 	| Units 	| Explanations		|
 |:--:|:--------- | ---------:|:----------------- |
