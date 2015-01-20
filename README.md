@@ -140,9 +140,9 @@ To load the output table you can use any variable name you like:
 `testdf <- read.table("Project_tidy_data_output.txt",header=TRUE)`
 
 The file is: 
-  - When examined in Windows (right click and go to properties) `291,576 bytes` in size and `294,912 bytes` on disk
-    - When shown in explorer windows it shows `284.7 KB` = `284.7 kibibytes (KiB)` = `291.5 kilobytes (KB)` (if you don't know the distinction, don't worry about it, most people choose to ignore this difference)
-  - When examined in Linux it shows `291,576 bytes` as the filesize
+  - When examined in Windows (right click and go to properties) `291,410 bytes` in size and `294,912 bytes` on disk
+    - When shown in explorer windows it shows `284.6 KB` = `284.6 kibibytes (KiB)` = `291.4 kilobytes (KB)` (if you don't know the distinction, don't worry about it, most people choose to ignore this difference)
+  - When examined in Linux it shows `291,410 bytes` as the filesize
   - When examined in R it should show to be a data frame of `180 obs. of 88 variables`
  
 The data is structured as follows:
@@ -151,7 +151,7 @@ The data is structured as follows:
 
 where `...` denotes the remaining 86 columns which included (not case sensitive) either the word "mean" or the word "std" in the description, again this is based on the discussion in [David's Project FAQ](https://class.coursera.org/getdata-016/forum/thread?thread_id=50) where he explains that this is what was intended by the direction to pull only these values out.  I have chosen to interpret this to mean all of the columns with means rather than only those which listed out something like "mean()" or "std()".
 
-Subject numbers are as included in the files, activityName is as found in the `activity_labels.txt` file, and the remaining column headers are those found in the `features.txt` file (as appropriate).
+Subject numbers are as included in the files, activityName is as found in the `activity_labels.txt` file, and the remaining column headers are those found in the `features.txt` file (after being subjected to some search and replacement to make them more readible).
 
 The data frame is sorted by subject then activity, since I didn't see this specified.  Fortunately this is easy enough to change if needed.
 
@@ -176,7 +176,7 @@ The following outline shows some pseudo-logic that was filled in to arrange the 
       - For the `activity_labels.txt` file, I renamed the columns to "activity" and "activityName" I did this after some experimentation so that the later call to merge worked easily and did exactly what I wanted, leaving me the single column "activityName" in the resulting data frame
       - The remaining labels from these two files were largely unnecessary
       - I also produced a logical vector which identified the "mean" and "std" columns using the feature labels as described above.
-    - Copy the actual name information into some temporary variables for use later
+    - Copy the actual name information into temporary variables for use later and modify what will be the column names to conform to a "nice" readible format
   2. Next load all actual data files (those in the test and train directories) into their respective data frames
     - Rename the column labels for all tables to reflect the contents
       - For the `*_subject.txt` files I labelled the column name "subject"
