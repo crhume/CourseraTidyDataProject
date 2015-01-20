@@ -181,7 +181,7 @@ The following outline shows some pseudo-logic that was filled in to arrange the 
     - Rename the column labels for all tables to reflect the contents
       - For the `*_subject.txt` files I labelled the column name "subject"
       - For the `Y_*.txt` files I labelled the column name "activity" 
-      - For the `X_*.txt` files I labelled the columns using the names extracted from the `features.txt` file
+      - For the `X_*.txt` files I labelled the columns using the names extracted from the `features.txt` file after some tweaks to the names supplied with the data set to make it more human readable.
   3. Because the data frames for the test and train were different sizes, I produced two separate data frames for these two sets using `cbind()` and then pulled those two together using `rbind()`
   4. To add the labels for the activities I used `merge()` to bring the result of the `rbind()` together with the activity labels from step 1
   5. Finally, I removed the column with the activity number, since it was no longer necessary.  At this point I had the first dataset required for the project, which I labelled `rdf` for "reduced data frame"  This was not yet tidy.
