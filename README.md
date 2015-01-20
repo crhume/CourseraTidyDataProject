@@ -12,12 +12,12 @@
 -------------------
 #### Quick Checklist Help
  * Did I submit a Github repo?
-  * Hopefully so. If not, something is strange.
+  * Hopefully so. If not, one of us is hallucinating.
  * Was codebook submitted that modifies and updates the codebooks available to you with the data to indicate all the variables and summaries you calculated along with units and any other relevant information?
-  * I hope so.  If this were something I were doing for real, I would presumably be able to know exactly what to say here.  As it is it is kind of an afterthought because I didn't realize this was expected until I went to add this section to this file.
-  * For ease, you can go directly to the section _V_ of this file to see the table, or you can look at it online [here](https://github.com/crhume/CourseraTidyDataProject/blob/master/codebook.txt)
+  * I believe so.  If this were something I were doing for real, I would presumably be able to know exactly what to say here.  As it is it is kind of an afterthought because I didn't realize this was expected until I went to add this section to this file.  I have produced something similar to a codebook, which I hope at least gives enough of an outline for the meaning to the data that it can serve this purpose for now.
+  * For ease, you can go directly to the section [_V_](#codebook) of this file to see the table, or you can look at it online [here](https://github.com/crhume/CourseraTidyDataProject/blob/master/codebook.txt)
  * Were you able to follow the README in the directory that explained what the analysis files do?
-  * (see [_IV_](#codebook) below you can also read the comments in the script itself)  
+  * (see [_IV_](#explain) below you can also read the comments in the script itself)  
 
 
 =======================
