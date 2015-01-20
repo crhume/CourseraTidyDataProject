@@ -81,6 +81,8 @@ a_lbls <- as.vector(activity_labels[,2]) # extracts just the activity names
 features <- read.table(paste(dir,"/features.txt",sep=""))
 f_lbls <- as.vector(features[,2]) # extracts just the feature names
 ## Some cleanup for f labels:
+## These replacements just make their activity labels more like
+## standard column labels.
 f_lbls <- gsub("\\(\\)","",f_lbls)
 f_lbls <- gsub("\\(",".",f_lbls)
 f_lbls <- gsub(",",".",f_lbls)
