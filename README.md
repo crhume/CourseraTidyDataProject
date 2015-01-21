@@ -7,7 +7,7 @@
 
 #### A Note about submission dates:
 
-* This project was completed by me during the previous month's offering of this same course, but due to problems with holiday travel and available internet, I was unable to complete the grading process and the fourth week's quiz.  For this reason, the submission dates on the project match up with the end of the third week of December 2014.  Thank you for understanding.
+* This project was completed by me during the previous month's offering of this same course, but due to problems with holiday travel and available internet, I was unable to complete the grading process and the fourth week's quiz.  For this reason, some of the submission dates on the project match up with the end of the third week of December 2014.  I have made some changes based on some comments from the reviewers from last time, however, none of which impacted the grade they assigned me but were mostly in light of readability.  Thank you for understanding.
 
 -------------------
 #### Quick Checklist Help
